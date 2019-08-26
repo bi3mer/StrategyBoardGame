@@ -82,7 +82,6 @@ namespace BGC.StateMachine
         /// </summary>
         public virtual void Update() { }
 
-
         /// <summary>
         /// Set whether the state machine is verbose or not
         /// </summary>

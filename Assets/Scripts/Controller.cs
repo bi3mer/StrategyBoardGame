@@ -17,8 +17,15 @@ public class Controller : MonoBehaviour
 
     private void Start()
     {
+        //GameState gameState = new GameState();
+
         stateMachine = new StateMachine<StateBool, StateTrigger>();
         stateMachine.AddEntryState(menuState.State);
         stateMachine.Start();
+    }
+
+    private void Update()
+    {
+        stateMachine.Update();
     }
 }
